@@ -3,37 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Breached</title>
+    <title>breached by tragic</title>
+    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'VCR OSD Mono', monospace;
+            overflow: hidden;
         }
-        header {
-            background: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-            padding: 20px;
-            font-size: 30px;
-            font-weight: bold;
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
         }
-        section {
-            padding: 50px;
+
+        p {
+            font-size: 1em;
+            opacity: 0.8;
         }
-        img {
-            width: 300px;
-            height: auto;
+
+        .image-container {
             margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <header>Website Breached by tragic</header>
-    <section>
-        <h1>i am the best - kl!</h1>
-        <p>fix your security.</p>
-        <img src="https://cdn.discordapp.com/avatars/1093239558214262865/c6801104252c5f2a4c1a76c69325a3ef.webp?size=1024&format=webp" alt="Breached Image">
-    </section>
+    <h1>This site was breached by tragic.</h1>
+    <p>get your shit back in blood - kl</p>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/avatars/1093239558214262865/c6801104252c5f2a4c1a76c69325a3ef.webp?size=1024&format=webp" alt="Breached Image">    </div>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="https://r2.guns.lol/8a0d30e4-df29-4e95-be55-5069c7a13af6.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('bg-music');
+            audio.volume = 0.9; 
+            audio.play().catch(error => {
+                console.log("Autoplay prevented. User interaction required.");
+            });
+        });
+    </script>
+
 </body>
 </html>
