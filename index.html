@@ -3,70 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>breached by kl</title>
-    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+    <title>404 - Plane Not Found</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            background: #000;
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-family: 'VCR OSD Mono', monospace;
-            overflow: hidden;
+            text-align: center;
         }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 5px;
+        .title {
+            color: red;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
-
-        p {
-            font-size: 1em;
-            opacity: 0.8;
+        .container img {
+            width: 300px;
+            height: auto;
+            border: 3px solid white;
         }
-
-        .image-container {
-            margin-top: 20px;
+        .hacked-text {
+            margin-top: 15px;
+            font-size: 1.2rem;
         }
-
-        img {
-            width: 100%;
-            max-width: 400px;
-            display: block;
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+        .blue {
+            color: cyan;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>This site was breached by 1-800.</h1>
-    <p>get your shit back in blood - kl</p>
-    <div class="image-container">
-        <img src="https://cdn.discordapp.com/avatars/1093239558214262865/c6801104252c5f2a4c1a76c69325a3ef.webp?size=1024&format=webp" alt="Breached Image">    </div>
-
-    <audio id="bg-music" autoplay loop>
-        <source src="https://r2.guns.lol/8a0d30e4-df29-4e95-be55-5069c7a13af6.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const audio = document.getElementById('bg-music');
-            audio.volume = 0.9; 
-            audio.play().catch(error => {
-                console.log("Autoplay prevented. User interaction required.");
-            });
-        });
-    </script>
-
+    <div class="title">404 - Plane Not Found</div>
+    <div class="container">
+        <img src="bre.png" alt="Hacked Image">
+    </div>
+    <div class="hacked-text">
+        Breached by <span class="red">kl</span> - <span class="blue">OFFICIAL CYBER CALIPHATE</span>
+    </div>
 </body>
 </html>
