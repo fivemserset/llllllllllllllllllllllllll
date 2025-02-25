@@ -47,13 +47,19 @@
         }
     </style>
 </head>
-<body>
+<body onclick="playAudio()">
     <div class="title">404 - Plane Not Found</div>
     <div class="container">
         <img src="bre.png" alt="Hacked Image">
     </div>
     <div class="hacked-text">
-        Breached by <span class="red">kl</span> - <span class="blue">OFFICIAL CYBER CALIPHATE</span>
+        Breached by <span class="red">KL</span> - <span class="blue">OFFICIAL CYBER CALIPHATE</span>
     </div>
+    <audio id="hackAudio" src="audio.mp3"></audio>
+    <script>
+        function playAudio() {
+            document.getElementById('hackAudio').play();
+        }
+    </script>
 </body>
 </html>
